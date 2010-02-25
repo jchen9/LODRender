@@ -1,0 +1,83 @@
+include ../config
+
+LDFLAGS = $(LIBRARY_DIR) $(LIBRARIES) $(SCENEGRAPH_LIBRARIES) 
+
+ifeq ($(BUILD_LIB_MODE), debug)
+    COMPILER_FLAGS += -g -O 
+    CXXFLAGS += -fPIC -DDEBUG
+else
+    COMPILER_FLAGS += -O 
+    CXXFLAGS += -fPIC 
+endif
+
+CPP 	= g++-4.0 
+CC      = gcc-4.0
+LIBTOOL	= libtool
+COMPILER_FLAGS += -DJAVA_BINDING 
+
+OBJ_FILES 	= common.o matrix.o canvas.o camera.o scenegraph.o model.o \
+              trackscene.o trackscenenode.o textureresource_ex.o \
+              cache.o coresection.o dataset.o graph.o annotationmarker.o \
+              png_read.o corelyzer_system.o freedraw.o fontsys.o util.o \
+              intrinsic.o dxt.o libdxt.o sha1.o
+
+I_OBJ_FILES 	= common.io matrix.io canvas.io camera.io scenegraph.io model.io \
+              trackscene.io trackscenenode.io textureresource_ex.io \
+              cache.io coresection.io dataset.io graph.io annotationmarker.io \
+              png_read.io corelyzer_system.io freedraw.io fontsys.io util.io \
+              intrinsic.io dxt.io libdxt.io sha1.io
+
+P_OBJ_FILES 	= common.po matrix.po canvas.po camera.po scenegraph.po model.po \
+              trackscene.po trackscenenode.po textureresource_ex.po \
+              cache.po coresection.po dataset.po graph.po annotationmarker.po \
+              png_read.po corelyzer_system.po freedraw.po fontsys.po util.po \
+              sha1.po
+
+$(EXEC): x86.jnilib x64.jnilib
+	@echo "Creating Universal Binary for i386 and x86_64"
+	/usr/bin/lipo -create -arch i386 i386.jnilib -arch x86_64 x64.jnilib -output $(EXEC)
+	/bin/cp $(EXEC) ../build
+
+# $(EXEC):	$(OBJ_FILES)
+#		$(ENVP) $(CPP) -g $(DYNFLAG) -o $(EXEC) \
+#		$(OBJ_FILES)  $(LDFLAGS) $(DYN_LOOKUP)
+#		$(REZ) 
+#		cp $(EXEC) ../bin/$(LIBPATH)
+
+%.o:	%.cpp $(ENGINE_HEADERS)
+	$(ENVP) $(CPP) -c $(COMPILER_FLAGS) $(CXXFLAGS) $(INCLUDE_DIR) -o $@ $<
+
+%.o:	%.c $(ENGINE_HEADERS)
+	$(ENVP) $(CC) -c $(COMPILER_FLAGS) $(CXXFLAGS) $(INCLUDE_DIR) -o $@ $<
+
+clean:
+	@echo "---> Clean obj files and the native library"
+	rm -f $(OBJ_FILES) $(I_OBJ_FILES) $(P_OBJ_FILES) *.jnilib
+
+cleanobjects:
+	rm -f $(OBJ_FILES) $(I_OBJ_FILES) $(P_OBJ_FILES) 
+
+#----------------------------
+%.io:	%.cpp $(ENGINE_HEADERS)
+	$(ENVP) $(CPP) -c $(COMPILER_FLAGS) -arch i386 -DUSE_FASTDXT $(CXXFLAGS) $(INCLUDE_DIR) -o $@ $<
+%.io:	%.c $(ENGINE_HEADERS)
+	$(ENVP) $(CC) -c $(COMPILER_FLAGS) -arch i386 -DUSE_FASTDXT $(CXXFLAGS) $(INCLUDE_DIR) -o $@ $<
+
+%.po:	%.cpp $(ENGINE_HEADERS)
+	$(ENVP) $(CPP) -c $(COMPILER_FLAGS) -arch x86_64 $(CXXFLAGS) $(INCLUDE_DIR) -o $@ $<
+%.po:	%.c $(ENGINE_HEADERS)
+	$(ENVP) $(CC) -c $(COMPILER_FLAGS) -arch x86_64 $(CXXFLAGS) $(INCLUDE_DIR) -o $@ $<
+
+x86.jnilib: $(I_OBJ_FILES)
+	@echo "- Compiling i386 architecture..."
+	$(ENVP) $(CPP) -g $(DYNFLAG) -o i386.jnilib \
+	$(I_OBJ_FILES) $(LDFLAGS) $(DYN_LOOKUP)
+	/Developer/Tools/Rez -t APPL -o i386.jnilib ../java/mac.r
+
+x64.jnilib: $(P_OBJ_FILES)
+	@echo "- Compiling x86_64 architecture..."
+	$(ENVP) $(CPP) -g $(DYNFLAG) -arch x86_64 -o x64.jnilib \
+	$(P_OBJ_FILES) $(LDFLAGS) $(DYN_LOOKUP)
+	/Developer/Tools/Rez -t APPL -o x64.jnilib ../java/mac.r
+
+

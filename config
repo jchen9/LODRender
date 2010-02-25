@@ -1,0 +1,134 @@
+# User configuration
+# CW      = [FIXME Input your Corelyzer directory path here]
+# LOCAL	=   /opt/local
+# LIBROOT = /opt/local
+LOCAL   = ../required
+LIBROOT = ../required
+
+# export BUILD_LIB_MODE = debug
+export BUILD_LIB_MODE = release
+
+# Apple Mac Dist Building Variables
+VER       = 1.3.8.1
+BUILD_ID  = 1733M
+
+VERSION_SHORT = $(VER)
+VERSION_LONG  = $(VER) Build $(BUILD_ID). Electronic Visualization Laboratory, University of Illinois at Chicago
+
+#-------------------------------------------------------------------------------
+export SYSTEM = $(shell uname -s)
+export PROCESSOR = $(shell uname -p)
+
+# MacOSX on PowerPC or Intel Core Duo
+ifeq ($(SYSTEM),Darwin)
+    export SCENEGRAPH_LIB = libscenegraph.jnilib
+    DYLD = `echo $DYLD_LIBRARY_PATH`
+
+    # For C
+    COMPILER_FLAGS = -isysroot /Developer/SDKs/MacOSX10.5.sdk
+    ENVP        = MACOSX_DEPLOYMENT_TARGET=10.5
+    PNG_INC     = -I$(LIBROOT)/include
+    JPEG_INC    = -I$(LIBROOT)/include
+    TIFF_INC    = -I$(LIBROOT)/include
+    OPENGL_INC  = -FOpenGL
+    SQUISH_INC  = -I$(LIBROOT)/include
+    FREETYPE_INC= -I$(LIBROOT)/include \
+                  -I$(LIBROOT)/include/freetype2
+    INCLUDE_DIR	= -I. -I../include $(TIFF_INC) $(JPEG_INC) $(PNG_INC) \
+        -I/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/JavaVM.framework/Versions/Current/Headers \
+        $(OPENGL_INC) $(FREETYPE_INC) $(SQUISH_INC)
+    
+    PNG_LIB     = $(LIBROOT)/lib/libpng.a 
+    JPEG_LIB    = $(LIBROOT)/lib/libjpeg.a
+    J2K_LIB     = $(LIBROOT)/lib/libopenjpeg.a
+    TIFF_LIB    = $(LIBROOT)/lib/libtiff.a
+    OPENGL_LIB  = -framework OpenGL
+    SQUISH_LIB  = $(LIBROOT)/lib/libsquish.a
+    FREETYPE_LIB= $(LIBROOT)/lib/libfreetype.a 
+    ZLIB_LIB    = $(LIBROOT)/lib/libz.a
+    GLEW_LIB    = $(LIBROOT)/lib/libGLEW.a
+    LIBRARY_DIR	= -framework JavaVM $(OPENGL_LIB) $(TIFF_LIB) $(JPEG_LIB) \
+                  $(J2K_LIB) \
+                  $(PNG_LIB) $(FREETYPE_LIB) $(SQUISH_LIB) $(ZLIB_LIB) \
+                  $(GLEW_LIB) -framework Carbon
+    LIBRARIES 	= -lstdc++ -lpthread  
+    EXEC 	= libscenegraph.jnilib
+    REZ         = /Developer/Tools/Rez -t APPL -o $(EXEC) ../java/mac.r
+    DYNFLAG     = -bundle $(COMPILER_FLAGS) 
+    DYN_LOOKUP  = 
+    
+    LIB_SCENEGRAPH = libscenegraph.jnilib
+
+    # For Java
+    ifeq ($(PROCESSOR),powerpc)
+	    ARCH = ppc
+    else
+	    ARCH = i386
+    endif
+
+    CP = $(CW)/bin/Corelyzer.jar:$(CW)/bin/jars/mac/jogl.jar
+
+    export DYLD_LIBRARY_PATH=$(PWD)/../bin/dyld:$(DYLD)
+    TARGET_DLL_DIR = bin/dyld
+    CLASSPATH = .:../plugins:../bin/jars/commons-codec-1.3.jar:../bin/jars/jxl.jar:../bin/jars/jdc.jar:../bin/jars/i4jruntime.jar:../bin/jars/javac2.jar:../bin/jars/dns_sd.jar:../bin/jars/jdom-1.0.jar:../bin/jars/rome-0.9.jar:../bin/jars/xercesImpl.jar:../bin/jars/xml-apis.jar:../bin/jars/glazedlists_java15.jar:../bin/jars/mac/jogl.jar:/System/Library/Java:../bin/jars/image-rome.jar:../bin/jars/core-rome.jar:../bin/jars/swing-layout-1.0.jar:../bin/jars/psicat.resources.lithologies.jar:../bin/jars/DataModelLib.jar:../bin/jars/jtunestable.jar:../bin/jars/jai_codec.jar:../bin/jars/jai_core.jar:../bin/jars/jai_imageio.jar:../bin/jars/clibwrapper_jiio.jar:../bin/jars/mlibwrapper_jai.jar:../bin/jars/jh.jar
+
+    MAC_TARGET = /Volumes/Corelyzer/Corelyzer.$(ARCH).app/Contents
+    LIBPATH = "./dyld"
+
+# Linux
+else
+    # For C
+    ENVP        =
+    PNG_INC     = -I/usr/include
+    JPEG_INC    = -I/usr/include
+    J2K_INC     = -I/home/evl/julian/dev/required/linux/OpenJPEG_v1_3/libopenjpeg
+    TIFF_INC    = -I/usr/include
+    OPENGL_INC  = -I/usr/share/doc/nvidia-glx-dev/include/
+    SQUISH_INC  = -I/home/evl/julian/dev/required/linux/squish-1.10
+    FREETYPE_INC= `freetype-config --cflags`
+    INCLUDE_DIR = -I../include $(OPENGL_INC) $(PNG_INC) $(JPEG_INC) \
+                $(J2K_INC) $(FREETYPE_INC) $(SQUISH_INC)\
+		-I$(JDK_HOME)/include/ \
+		-I$(JDK_HOME)/include/linux
+
+    PNG_LIB     = -L/usr/lib -lpng
+    JPEG_LIB    = -L/usr/lib -ljpeg
+    TIFF_LIB    = -L/usr/lib -ltiff
+    OPENGL_LIB  = -L/usr/lib -lGL -lGLU
+    FREETYPE_LIB= `freetype-config --libs`
+    SQUISH_LIB  = /home/evl/julian/dev/required/linux/squish-1.10/libsquish.a
+    JAVA_LIB = -L$(JDK_HOME)/jre/lib/amd64/server \
+		-ljvm
+    LIBRARIES 	= -lstdc++ $(JAVA_LIB) $(OPENGL_LIB) $(TIFF_LIB)  $(PNG_LIB) \
+                  $(JPEG_LIB) $(FREETYPE_LIB) $(SQUISH_LIB)
+    EXEC 	= libscenegraph.so
+    REZ         =
+    DYNFLAG     = -shared
+    DYN_LOOKUP  = 
+    
+    LIB_SCENEGRAPH = libscenegraph.so
+
+    # For Java
+    CP = $(CW)/bin/Corelyzer.jar:$(CW)/bin/jars/linux/amd64/jogl.jar
+
+    export SCENEGRAPH_LIB = libscenegraph.so
+    DYLD = `echo $LD_LIBRARY_PATH`
+
+    ifeq ($(PROCESSOR), x86_64)
+        export LD_LIBRARY_PATH=$(PWD)/../bin/so/amd64:$(DYLD)
+        TARGET_DLL_DIR = bin/so/amd64
+#        CLASSPATH =  .:$(PWD)/../plugins:$(PWD)/../bin/jars/jdc.jar:$(PWD)/../bin/jars/i4jruntime.jar:$(PWD)/../bin/jars/linux/amd64/jogl.jar:$(PWD)/../bin/jars/linux/amd64/glugen.jar:$(PWD)/../bin/jars/linux/amd64/gluegen-rt.jar:$(PWD)/../bin/jars/linux/amd64/resolver.jar:$(PWD)/../bin/jars/xercesImpl.jar:$(PWD)/../bin/jars/xml-apis.jar:$(PWD)/../bin/jars/xercesSamples.jar:$(PWD)/../bin/jars/jh.jar:$(PWD)/../bin/jars/javac2.jar
+	    CLASSPATH = .:../plugins:../bin/jars/commons-codec-1.3.jar:../bin/jars/jxl.jar:../bin/jars/jdc.jar:../bin/jars/i4jruntime.jar:../bin/jars/javac2.jar:../bin/jars/dns_sd.jar:../bin/jars/jdom-1.0.jar:../bin/jars/rome-0.9.jar:../bin/jars/xercesImpl.jar:../bin/jars/xml-apis.jar:../bin/jars/glazedlists_java15.jar:../bin/jars/linux/amd64/jogl.jar:../bin/jars/image-rome.jar:../bin/jars/core-rome.jar:../bin/jars/swing-layout-1.0.jar:../bin/jars/psicat.resources.lithologies.jar:../bin/jars/DataModelLib.jar:../bin/jars/jtunestable.jar:../bin/jars/jai_codec.jar:../bin/jars/jai_core.jar:../bin/jars/jai_imageio.jar:../bin/jars/clibwrapper_jiio.jar:../bin/jars/mlibwrapper_jai.jar:../bin/jars/jh.jar
+	    LIBPATH = "./so/amd64"
+    else
+        export LD_LIBRARY_PATH=$(PWD)/../bin/so/i386:$(DYLD)
+        TARGET_DLL_DIR = bin/so/i386
+        CLASSPATH =  .:$(PWD)/../plugins:$(PWD)/../bin/jars/jdc.jar:$(PWD)/../bin/jars/i4jruntime.jar:$(PWD)/../bin/jars/linux/i386/jogl.jar:$(PWD)/../bin/jars/linux/i386/glugen.jar:$(PWD)/../bin/jars/linux/i386/gluegen-rt.jar:$(PWD)/../bin/jars/linux/i386/resolver.jar:$(PWD)/../bin/jars/linux/i386/xercesImpl.jar:$(PWD)/../bin/jars/linux/i386/xml-apis.jar:$(PWD)/../bin/jars/linux/i386/xercesSamples.jar
+	    LIBPATH = "./so/i386"
+    endif
+endif
+
+# Microsoft Windows XP with Cygwin
+ifeq ($(SYSTEM),CYGWIN_NT-5.1)
+	CP = "$(CW)\\bin\\Corelyzer.jar;$(CW)\\bin\\jars\\windows\\win32\\jogl.jar"
+endif

@@ -1,0 +1,12 @@
+= By Julian Yu-Chung Chen (julian at evl.uic.edu) , 2009-Nov-30 =
+
+= MacOSX Framework =
+Open the Xcode project and build LODRender.Framework target
+
+= Java JNI library =
+$make -f Makefile.JNI
+libscenegraph.jnilib will be built and placed in the "build" directory.
+
+ps. Current build will only generate i386 + x86_64 Universal Binary.
+    No PowerPC support.
+

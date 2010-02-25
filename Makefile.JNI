@@ -1,0 +1,19 @@
+include config
+
+all: build_jnilib
+
+generate_header: java/Corelyzer*.jar
+	@echo "======== Generate JNI Header file... ========"
+	cd ./java && javah -classpath ./Corelyzer*.jar -d ../include corelyzer.helper.SceneGraph && cd ..
+
+build_jnilib: generate_header
+	@echo "======== Build LODRender JNI library ========"
+	cd ./src && make -f Makefile.JNI && cd ../
+
+clean:
+	@echo "======== Delete JNI Header           ========"
+	@rm -f include/corelyzer_helper_SceneGraph.h
+
+	@echo "======== Delete object files         ======="
+	cd ./src && make -f Makefile.JNI clean && cd ../
+	@rm -f build/*.jnilib
