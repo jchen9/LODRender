@@ -63,15 +63,6 @@
 		B907CF7810BC75EB005CE4FB /* utility.h in Headers */ = {isa = PBXBuildFile; fileRef = B907CF5D10BC75EB005CE4FB /* utility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B907CF7910BC75EB005CE4FB /* vvvecmath.h in Headers */ = {isa = PBXBuildFile; fileRef = B907CF5E10BC75EB005CE4FB /* vvvecmath.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B907CFA410BC7B19005CE4FB /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B907CFA310BC7B19005CE4FB /* OpenGL.framework */; };
-		B907CFB610BC7B81005CE4FB /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B907CFAD10BC7B81005CE4FB /* libfreetype.a */; };
-		B907CFB710BC7B81005CE4FB /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B907CFAE10BC7B81005CE4FB /* libGLEW.a */; };
-		B907CFB810BC7B81005CE4FB /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B907CFAF10BC7B81005CE4FB /* libjpeg.a */; };
-		B907CFB910BC7B82005CE4FB /* libopenjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B907CFB010BC7B81005CE4FB /* libopenjpeg.a */; };
-		B907CFBA10BC7B82005CE4FB /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B907CFB110BC7B81005CE4FB /* libpng.a */; };
-		B907CFBB10BC7B82005CE4FB /* libsquish.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B907CFB210BC7B81005CE4FB /* libsquish.a */; };
-		B907CFBC10BC7B82005CE4FB /* libtiff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B907CFB310BC7B81005CE4FB /* libtiff.a */; };
-		B907CFBD10BC7B82005CE4FB /* libtiffxx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B907CFB410BC7B81005CE4FB /* libtiffxx.a */; };
-		B907CFBE10BC7B82005CE4FB /* libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B907CFB510BC7B81005CE4FB /* libz.a */; };
 		B907D37010BC8D17005CE4FB /* arial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B907D34C10BC8D17005CE4FB /* arial.ttf */; };
 		B907D37110BC8D17005CE4FB /* core_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B907D34D10BC8D17005CE4FB /* core_logo.png */; };
 		B907D37210BC8D17005CE4FB /* corelyzer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B907D34E10BC8D17005CE4FB /* corelyzer.jpg */; };
@@ -86,6 +77,15 @@
 		B907D37B10BC8D17005CE4FB /* corewall_suite.png in Resources */ = {isa = PBXBuildFile; fileRef = B907D35710BC8D17005CE4FB /* corewall_suite.png */; };
 		B907D39210BC8D17005CE4FB /* RemoteControl-Billboard.png in Resources */ = {isa = PBXBuildFile; fileRef = B907D36F10BC8D17005CE4FB /* RemoteControl-Billboard.png */; };
 		B907D3D710BC96B2005CE4FB /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B907D3D610BC96B2005CE4FB /* Carbon.framework */; };
+		B91E167C1136D6E800B6F7F8 /* libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B91E16741136D6E800B6F7F8 /* libz.a */; };
+		B91E167D1136D6E800B6F7F8 /* libtiffxx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B91E16751136D6E800B6F7F8 /* libtiffxx.a */; };
+		B91E167E1136D6E800B6F7F8 /* libtiff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B91E16761136D6E800B6F7F8 /* libtiff.a */; };
+		B91E167F1136D6E800B6F7F8 /* libpng12.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B91E16771136D6E800B6F7F8 /* libpng12.a */; };
+		B91E16801136D6E800B6F7F8 /* libopenjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B91E16781136D6E800B6F7F8 /* libopenjpeg.a */; };
+		B91E16811136D6E800B6F7F8 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B91E16791136D6E800B6F7F8 /* libjpeg.a */; };
+		B91E16821136D6E800B6F7F8 /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B91E167A1136D6E800B6F7F8 /* libGLEW.a */; };
+		B91E16831136D6E800B6F7F8 /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B91E167B1136D6E800B6F7F8 /* libfreetype.a */; };
+		B91E16871136D72500B6F7F8 /* libsquish.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B91E16861136D72500B6F7F8 /* libsquish.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -150,15 +150,6 @@
 		B907CF5D10BC75EB005CE4FB /* utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utility.h; path = include/utility.h; sourceTree = "<group>"; };
 		B907CF5E10BC75EB005CE4FB /* vvvecmath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vvvecmath.h; path = include/vvvecmath.h; sourceTree = "<group>"; };
 		B907CFA310BC7B19005CE4FB /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		B907CFAD10BC7B81005CE4FB /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = required/lib/libfreetype.a; sourceTree = "<group>"; };
-		B907CFAE10BC7B81005CE4FB /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = required/lib/libGLEW.a; sourceTree = "<group>"; };
-		B907CFAF10BC7B81005CE4FB /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjpeg.a; path = required/lib/libjpeg.a; sourceTree = "<group>"; };
-		B907CFB010BC7B81005CE4FB /* libopenjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopenjpeg.a; path = required/lib/libopenjpeg.a; sourceTree = "<group>"; };
-		B907CFB110BC7B81005CE4FB /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng.a; path = required/lib/libpng.a; sourceTree = "<group>"; };
-		B907CFB210BC7B81005CE4FB /* libsquish.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsquish.a; path = required/lib/libsquish.a; sourceTree = "<group>"; };
-		B907CFB310BC7B81005CE4FB /* libtiff.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtiff.a; path = required/lib/libtiff.a; sourceTree = "<group>"; };
-		B907CFB410BC7B81005CE4FB /* libtiffxx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtiffxx.a; path = required/lib/libtiffxx.a; sourceTree = "<group>"; };
-		B907CFB510BC7B81005CE4FB /* libz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libz.a; path = required/lib/libz.a; sourceTree = "<group>"; };
 		B907D34C10BC8D17005CE4FB /* arial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = arial.ttf; path = resources/arial.ttf; sourceTree = "<group>"; };
 		B907D34D10BC8D17005CE4FB /* core_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = core_logo.png; path = resources/core_logo.png; sourceTree = "<group>"; };
 		B907D34E10BC8D17005CE4FB /* corelyzer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = corelyzer.jpg; path = resources/corelyzer.jpg; sourceTree = "<group>"; };
@@ -173,6 +164,15 @@
 		B907D35710BC8D17005CE4FB /* corewall_suite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = corewall_suite.png; path = resources/corewall_suite.png; sourceTree = "<group>"; };
 		B907D36F10BC8D17005CE4FB /* RemoteControl-Billboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "RemoteControl-Billboard.png"; path = "resources/RemoteControl-Billboard.png"; sourceTree = "<group>"; };
 		B907D3D610BC96B2005CE4FB /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		B91E16741136D6E800B6F7F8 /* libz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libz.a; path = /opt/local/lib/libz.a; sourceTree = "<absolute>"; };
+		B91E16751136D6E800B6F7F8 /* libtiffxx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtiffxx.a; path = /opt/local/lib/libtiffxx.a; sourceTree = "<absolute>"; };
+		B91E16761136D6E800B6F7F8 /* libtiff.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtiff.a; path = /opt/local/lib/libtiff.a; sourceTree = "<absolute>"; };
+		B91E16771136D6E800B6F7F8 /* libpng12.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng12.a; path = /opt/local/lib/libpng12.a; sourceTree = "<absolute>"; };
+		B91E16781136D6E800B6F7F8 /* libopenjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopenjpeg.a; path = /opt/local/lib/libopenjpeg.a; sourceTree = "<absolute>"; };
+		B91E16791136D6E800B6F7F8 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjpeg.a; path = /opt/local/lib/libjpeg.a; sourceTree = "<absolute>"; };
+		B91E167A1136D6E800B6F7F8 /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = /opt/local/lib/libGLEW.a; sourceTree = "<absolute>"; };
+		B91E167B1136D6E800B6F7F8 /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = /opt/local/lib/libfreetype.a; sourceTree = "<absolute>"; };
+		B91E16861136D72500B6F7F8 /* libsquish.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsquish.a; path = /opt/local/lib/libsquish.a; sourceTree = "<absolute>"; };
 		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -183,16 +183,16 @@
 			files = (
 				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
 				B907CFA410BC7B19005CE4FB /* OpenGL.framework in Frameworks */,
-				B907CFB610BC7B81005CE4FB /* libfreetype.a in Frameworks */,
-				B907CFB710BC7B81005CE4FB /* libGLEW.a in Frameworks */,
-				B907CFB810BC7B81005CE4FB /* libjpeg.a in Frameworks */,
-				B907CFB910BC7B82005CE4FB /* libopenjpeg.a in Frameworks */,
-				B907CFBA10BC7B82005CE4FB /* libpng.a in Frameworks */,
-				B907CFBB10BC7B82005CE4FB /* libsquish.a in Frameworks */,
-				B907CFBC10BC7B82005CE4FB /* libtiff.a in Frameworks */,
-				B907CFBD10BC7B82005CE4FB /* libtiffxx.a in Frameworks */,
-				B907CFBE10BC7B82005CE4FB /* libz.a in Frameworks */,
 				B907D3D710BC96B2005CE4FB /* Carbon.framework in Frameworks */,
+				B91E167C1136D6E800B6F7F8 /* libz.a in Frameworks */,
+				B91E167D1136D6E800B6F7F8 /* libtiffxx.a in Frameworks */,
+				B91E167E1136D6E800B6F7F8 /* libtiff.a in Frameworks */,
+				B91E167F1136D6E800B6F7F8 /* libpng12.a in Frameworks */,
+				B91E16801136D6E800B6F7F8 /* libopenjpeg.a in Frameworks */,
+				B91E16811136D6E800B6F7F8 /* libjpeg.a in Frameworks */,
+				B91E16821136D6E800B6F7F8 /* libGLEW.a in Frameworks */,
+				B91E16831136D6E800B6F7F8 /* libfreetype.a in Frameworks */,
+				B91E16871136D72500B6F7F8 /* libsquish.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,15 +338,15 @@
 		B907CFC110BC7B8A005CE4FB /* Linked Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				B907CFAD10BC7B81005CE4FB /* libfreetype.a */,
-				B907CFAE10BC7B81005CE4FB /* libGLEW.a */,
-				B907CFAF10BC7B81005CE4FB /* libjpeg.a */,
-				B907CFB010BC7B81005CE4FB /* libopenjpeg.a */,
-				B907CFB110BC7B81005CE4FB /* libpng.a */,
-				B907CFB210BC7B81005CE4FB /* libsquish.a */,
-				B907CFB310BC7B81005CE4FB /* libtiff.a */,
-				B907CFB410BC7B81005CE4FB /* libtiffxx.a */,
-				B907CFB510BC7B81005CE4FB /* libz.a */,
+				B91E16861136D72500B6F7F8 /* libsquish.a */,
+				B91E16741136D6E800B6F7F8 /* libz.a */,
+				B91E16751136D6E800B6F7F8 /* libtiffxx.a */,
+				B91E16761136D6E800B6F7F8 /* libtiff.a */,
+				B91E16771136D6E800B6F7F8 /* libpng12.a */,
+				B91E16781136D6E800B6F7F8 /* libopenjpeg.a */,
+				B91E16791136D6E800B6F7F8 /* libjpeg.a */,
+				B91E167A1136D6E800B6F7F8 /* libGLEW.a */,
+				B91E167B1136D6E800B6F7F8 /* libfreetype.a */,
 			);
 			name = "Linked Libraries";
 			sourceTree = "<group>";
@@ -542,6 +542,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/required/lib\"",
+					/opt/local/lib,
 				);
 				PRODUCT_NAME = LODRender;
 				WRAPPER_EXTENSION = framework;
@@ -564,6 +565,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/required/lib\"",
+					/opt/local/lib,
 				);
 				PRODUCT_NAME = LODRender;
 				WRAPPER_EXTENSION = framework;

@@ -11,6 +11,8 @@
 
 @implementation CorelyzerGLViewController
 
+@synthesize window;
+
 - (void) awakeFromNib
 {
 		// Bonjour
@@ -52,7 +54,8 @@ static bool hasCanvasGrid = false;
 		//	[button setEnabled:NO];	
 
 		// Simple single section track
-	int * trackSectIds = [self loadASection:@"/Users/julian/Downloads/phot-32a-09-fullres.tif" 
+		// int * trackSectIds = [self loadASection:@"/Users/julian/Downloads/phot-32a-09-fullres.tif" 
+	int * trackSectIds = [self loadASection:@"/Users/julian/Downloads/Haha.tif" 
 								  intoTrack:@"Simple Track"];
 	
 	NSLog(@"- IDs: %d, %d", trackSectIds[0], trackSectIds[1]);
@@ -86,6 +89,47 @@ static bool hasCanvasGrid = false;
 		view.doSAGEStream = NO;
 		[comboBox setEnabled:YES];
 	}	
+}
+
+- (IBAction)openImageAction:(id)sender
+{
+	NSOpenPanel *panel = [NSOpenPanel openPanel];
+	[panel setAllowsOtherFileTypes:NO];
+	[panel setTreatsFilePackagesAsDirectories:YES];
+	
+	[panel
+	 beginSheetForDirectory:nil
+	 file:nil
+	 modalForWindow:[self window]
+	 modalDelegate:self
+	 didEndSelector:@selector(openImageDidEnd:returnCode:contextInfo:)
+	 contextInfo:nil];		
+}
+
+- (void)openImageDidEnd:(NSOpenPanel*)panel returnCode:(int)returnCode contextInfo:(void*)contextInfo
+{
+	if(returnCode == NSOKButton)
+	{
+		[self loadImageFrom:[panel URL]];
+	}
+}
+
+- (void)loadImageFrom:(NSURL *)aUrl
+{
+		// TODO:
+		// Simple single section track
+	NSString *sectionPath = [aUrl path];
+	NSString *trackName = [NSString stringWithFormat:@"%@-track", sectionPath];
+	int * trackSectIds = [self loadASection:sectionPath intoTrack:trackName];
+	
+	NSLog(@"- '%@' IDs: %d, %d", sectionPath, trackSectIds[0], trackSectIds[1]);
+	
+	sceneTrackId = trackSectIds[0];
+	sceneSectionId = trackSectIds[1];
+	
+	free(trackSectIds);
+	
+	[view setNeedsDisplay:YES];
 }
 
 #pragma mark Other methods

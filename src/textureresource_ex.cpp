@@ -1543,6 +1543,7 @@ MultiLevelTextureSetEX* create_texset_from_tiff(const char* filename, int nlevel
             return NULL; //-1;
         }
 
+			// FIXME: "Sorry, can not handle images with 32-bit samples."		
         unsigned int status = TIFFReadRGBAImage( tif, w, h, pixels, 0);
 
         if(status == 0) // false

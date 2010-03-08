@@ -65,7 +65,7 @@
 	};
 	256AC3D80F4B6AC300CF3369 /* Cocoa_CorelyzerAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {678, 544}}";
+			sepNavIntBoundsRect = "{{0, 0}, {930, 426}}";
 			sepNavSelRange = "{182, 0}";
 			sepNavVisRange = "{0, 335}";
 			sepNavWindowFrame = "{{603, 95}, {831, 895}}";
@@ -89,6 +89,8 @@
 			8DC2EF4F0486A6940098B216 /* LODRender */,
 		);
 		breakpoints = (
+			B9FF953F11457F0000E4B3FA /* CorelyzerGLViewController.mm:58 */,
+			B9FF954711457F6800E4B3FA /* textureresource_ex.cpp:1547 */,
 		);
 		codeSenseManager = B9EC023B104EC981004CE843 /* Code sense */;
 		executables = (
@@ -224,44 +226,24 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 281397224;
-			PBXWorkspaceStateSaveDate = 281397224;
+			PBXPerProjectTemplateStateSaveDate = 289766849;
+			PBXWorkspaceStateSaveDate = 289766849;
 		};
 		perUserProjectItems = {
-			B907CBB810BC5B07005CE4FB = B907CBB810BC5B07005CE4FB /* PBXTextBookmark */;
-			B907CD4C10BC6100005CE4FB = B907CD4C10BC6100005CE4FB /* PBXTextBookmark */;
-			B907CD4D10BC6100005CE4FB = B907CD4D10BC6100005CE4FB /* PBXTextBookmark */;
-			B907CD8910BC61BF005CE4FB = B907CD8910BC61BF005CE4FB /* PBXTextBookmark */;
-			B907CD8A10BC61BF005CE4FB = B907CD8A10BC61BF005CE4FB /* PBXTextBookmark */;
-			B907CE1710BC66B7005CE4FB = B907CE1710BC66B7005CE4FB /* PBXTextBookmark */;
-			B907CE1910BC66B7005CE4FB = B907CE1910BC66B7005CE4FB /* PBXTextBookmark */;
-			B907CE2410BC66B7005CE4FB = B907CE2410BC66B7005CE4FB /* PBXTextBookmark */;
-			B907CE8410BC6F9C005CE4FB = B907CE8410BC6F9C005CE4FB /* PBXTextBookmark */;
-			B907CE8510BC6F9C005CE4FB = B907CE8510BC6F9C005CE4FB /* PBXTextBookmark */;
-			B907CEAC10BC73B2005CE4FB = B907CEAC10BC73B2005CE4FB /* PBXTextBookmark */;
-			B907D05810BC7F11005CE4FB = B907D05810BC7F11005CE4FB /* PBXTextBookmark */;
-			B907D2B210BC896A005CE4FB = B907D2B210BC896A005CE4FB /* PBXTextBookmark */;
-			B907D32910BC8CA4005CE4FB = B907D32910BC8CA4005CE4FB /* PBXTextBookmark */;
-			B91994EC1076B51700557C74 = B91994EC1076B51700557C74 /* PBXTextBookmark */;
-			B91995541076B86400557C74 = B91995541076B86400557C74 /* PBXTextBookmark */;
-			B91995631076B89000557C74 = B91995631076B89000557C74 /* PBXTextBookmark */;
-			B91F8B7B10691880005603C8 = B91F8B7B10691880005603C8 /* PBXBookmark */;
-			B91F8B7C10691880005603C8 = B91F8B7C10691880005603C8 /* PBXBookmark */;
-			B91F8B8B106926FA005603C8 = B91F8B8B106926FA005603C8 /* PBXTextBookmark */;
-			B93B2498106C15D600228863 = B93B2498106C15D600228863 /* PBXTextBookmark */;
-			B943CA23106FE98700F849B1 = B943CA23106FE98700F849B1 /* PBXTextBookmark */;
-			B94ECBDE106FE74E0040CC15 = B94ECBDE106FE74E0040CC15 /* PBXTextBookmark */;
-			B94ECBE3106FE74E0040CC15 = B94ECBE3106FE74E0040CC15 /* PBXTextBookmark */;
-			B94ECBE4106FE74E0040CC15 = B94ECBE4106FE74E0040CC15 /* PBXTextBookmark */;
-			B94ECBE6106FE74E0040CC15 = B94ECBE6106FE74E0040CC15 /* PBXTextBookmark */;
-			B94ECBE9106FE74E0040CC15 = B94ECBE9106FE74E0040CC15 /* PBXTextBookmark */;
-			B953EAA11062F5B600788DC6 = B953EAA11062F5B600788DC6 /* PlistBookmark */;
-			B953EAA41062F5B600788DC6 = B953EAA41062F5B600788DC6 /* PBXTextBookmark */;
-			B9AE812610B5F5E60075CB8A = B9AE812610B5F5E60075CB8A /* PBXTextBookmark */;
-			B9B73A1D10C578D6007BB14E = B9B73A1D10C578D6007BB14E /* PBXTextBookmark */;
-			B9B73A1E10C578D6007BB14E = B9B73A1E10C578D6007BB14E /* PBXBookmark */;
-			B9B73A2710C578F3007BB14E = B9B73A2710C578F3007BB14E /* PBXTextBookmark */;
-			B9B73A7110C5C7FD007BB14E /* PBXTextBookmark */ = B9B73A7110C5C7FD007BB14E /* PBXTextBookmark */;
+			B907D2B210BC896A005CE4FB /* PBXTextBookmark */ = B907D2B210BC896A005CE4FB /* PBXTextBookmark */;
+			B907D32910BC8CA4005CE4FB /* PBXTextBookmark */ = B907D32910BC8CA4005CE4FB /* PBXTextBookmark */;
+			B91994EC1076B51700557C74 /* PBXTextBookmark */ = B91994EC1076B51700557C74 /* PBXTextBookmark */;
+			B93B2498106C15D600228863 /* PBXTextBookmark */ = B93B2498106C15D600228863 /* PBXTextBookmark */;
+			B943CA23106FE98700F849B1 /* PBXTextBookmark */ = B943CA23106FE98700F849B1 /* PBXTextBookmark */;
+			B9AE812610B5F5E60075CB8A /* PBXTextBookmark */ = B9AE812610B5F5E60075CB8A /* PBXTextBookmark */;
+			B9FF952C11457E6200E4B3FA /* PBXTextBookmark */ = B9FF952C11457E6200E4B3FA /* PBXTextBookmark */;
+			B9FF952D11457E6200E4B3FA /* PBXTextBookmark */ = B9FF952D11457E6200E4B3FA /* PBXTextBookmark */;
+			B9FF952E11457E6200E4B3FA /* PBXTextBookmark */ = B9FF952E11457E6200E4B3FA /* PBXTextBookmark */;
+			B9FF954B11457F7E00E4B3FA /* PBXTextBookmark */ = B9FF954B11457F7E00E4B3FA /* PBXTextBookmark */;
+			B9FF95651145860200E4B3FA /* PBXTextBookmark */ = B9FF95651145860200E4B3FA /* PBXTextBookmark */;
+			B9FF9580114587F500E4B3FA /* PBXTextBookmark */ = B9FF9580114587F500E4B3FA /* PBXTextBookmark */;
+			B9FF95881145881A00E4B3FA /* PBXTextBookmark */ = B9FF95881145881A00E4B3FA /* PBXTextBookmark */;
+			B9FF95891145881E00E4B3FA /* PBXTextBookmark */ = B9FF95891145881E00E4B3FA /* PBXTextBookmark */;
 		};
 		sourceControlManager = B9EC023A104EC981004CE843 /* Source Control */;
 		userBuildSettings = {
@@ -326,160 +308,12 @@
 		);
 		runOnlyForDeploymentPostprocessing = 0;
 	};
-	B907CBB810BC5B07005CE4FB /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B9D257D7105022F2008DFCF3 /* CorelyzerGLViewController.mm */;
-		name = "CorelyzerGLViewController.mm: 22";
-		rLen = 0;
-		rLoc = 558;
-		rType = 0;
-		vrLen = 961;
-		vrLoc = 0;
-	};
 	B907CD3510BC5F13005CE4FB /* Corelyzer.conf */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {777, 625}}";
-			sepNavSelRange = "{136, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {930, 426}}";
+			sepNavSelRange = "{68, 0}";
 			sepNavVisRange = "{0, 265}";
 		};
-	};
-	B907CD4C10BC6100005CE4FB /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B9EC0277104ECB37004CE843 /* cache.h */;
-		name = "cache.h: 8";
-		rLen = 0;
-		rLoc = 333;
-		rType = 0;
-		vrLen = 1219;
-		vrLoc = 0;
-	};
-	B907CD4D10BC6100005CE4FB /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B9EC02A8104ECB37004CE843 /* trackscenenode.cpp */;
-		name = "trackscenenode.cpp: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1219;
-		vrLoc = 0;
-	};
-	B907CD8910BC61BF005CE4FB /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B9EC027B104ECB37004CE843 /* corelyzer_system.h */;
-		name = "corelyzer_system.h: 33";
-		rLen = 0;
-		rLoc = 1342;
-		rType = 0;
-		vrLen = 798;
-		vrLoc = 805;
-	};
-	B907CD8A10BC61BF005CE4FB /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B9EC0299104ECB37004CE843 /* freedraw.cpp */;
-		name = "freedraw.cpp: 224";
-		rLen = 0;
-		rLoc = 6958;
-		rType = 0;
-		vrLen = 1218;
-		vrLoc = 0;
-	};
-	B907CE1710BC66B7005CE4FB /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B9EC0281104ECB37004CE843 /* freedraw.h */;
-		name = "freedraw.h: 31";
-		rLen = 0;
-		rLoc = 1309;
-		rType = 0;
-		vrLen = 740;
-		vrLoc = 1330;
-	};
-	B907CE1910BC66B7005CE4FB /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B907CE1A10BC66B7005CE4FB /* sageConfig.h */;
-		name = "sageConfig.h: 44";
-		rLen = 0;
-		rLoc = 2084;
-		rType = 0;
-		vrLen = 708;
-		vrLoc = 1704;
-	};
-	B907CE1A10BC66B7005CE4FB /* sageConfig.h */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.h;
-		name = sageConfig.h;
-		path = "/Users/julian/dev/EVL/LODRender/Cocoa Corelyzer/Frameworks/SAGE.framework/Headers/sageConfig.h";
-		sourceTree = "<absolute>";
-	};
-	B907CE2410BC66B7005CE4FB /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B9EC029B104ECB37004CE843 /* intrinsic.cpp */;
-		name = "intrinsic.cpp: 383";
-		rLen = 0;
-		rLoc = 11986;
-		rType = 0;
-		vrLen = 1448;
-		vrLoc = 11515;
-	};
-	B907CE5110BC6D3A005CE4FB /* scenegraph.cpp */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.cpp.cpp;
-		name = scenegraph.cpp;
-		path = /Users/julian/dev/EVL/LODRender/src/scenegraph.cpp;
-		sourceTree = "<absolute>";
-	};
-	B907CE8410BC6F9C005CE4FB /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B907CE5110BC6D3A005CE4FB /* scenegraph.cpp */;
-		name = "scenegraph.cpp: 1676";
-		rLen = 0;
-		rLoc = 40103;
-		rType = 0;
-		vrLen = 707;
-		vrLoc = 40005;
-	};
-	B907CE8510BC6F9C005CE4FB /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B9EC027C104ECB37004CE843 /* coresection.h */;
-		name = "coresection.h: 112";
-		rLen = 0;
-		rLoc = 4035;
-		rType = 0;
-		vrLen = 1528;
-		vrLoc = 3326;
-	};
-	B907CEAC10BC73B2005CE4FB /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B907CEAD10BC73B2005CE4FB /* julian.pbxuser */;
-		name = "julian.pbxuser: 13";
-		rLen = 0;
-		rLoc = 392;
-		rType = 0;
-		vrLen = 1068;
-		vrLoc = 0;
-	};
-	B907CEAD10BC73B2005CE4FB /* julian.pbxuser */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = text;
-		name = julian.pbxuser;
-		path = "/Users/julian/dev/EVL/LODRender/Cocoa Corelyzer/Cocoa Corelyzer.xcodeproj/julian.pbxuser";
-		sourceTree = "<absolute>";
-	};
-	B907D05810BC7F11005CE4FB /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B907D05910BC7F11005CE4FB /* CRPaletteQuit.html */;
-		name = "CRPaletteQuit.html: 3";
-		rLen = 7;
-		rLoc = 32;
-		rType = 0;
-		vrLen = 317;
-		vrLoc = 0;
-	};
-	B907D05910BC7F11005CE4FB /* CRPaletteQuit.html */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = text.html;
-		name = CRPaletteQuit.html;
-		path = "/Users/julian/dev/EVL/LODRender/Cocoa Corelyzer/resources/help/CRPaletteQuit.html";
-		sourceTree = "<absolute>";
 	};
 	B907D2B210BC896A005CE4FB /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -518,44 +352,6 @@
 		vrLen = 855;
 		vrLoc = 0;
 	};
-	B91995541076B86400557C74 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B9EC027D104ECB37004CE843 /* dataset.h */;
-		name = "dataset.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1562;
-		vrLoc = 0;
-	};
-	B91995631076B89000557C74 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B9EC0289104ECB37004CE843 /* textureresource_ex.h */;
-		name = "textureresource_ex.h: 125";
-		rLen = 14;
-		rLoc = 4624;
-		rType = 0;
-		vrLen = 1842;
-		vrLoc = 2967;
-	};
-	B91F8B7B10691880005603C8 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = B953EA3E1062F36300788DC6 /* attachment.gif */;
-	};
-	B91F8B7C10691880005603C8 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = B953EA401062F36300788DC6 /* break.gif */;
-	};
-	B91F8B8B106926FA005603C8 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B9EC02AA104ECB37004CE843 /* vvvecmath.cpp */;
-		name = "vvvecmath.cpp: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1652;
-		vrLoc = 0;
-	};
 	B93B2498106C15D600228863 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = B9AF57601063E11C000F616A /* CRServiceSearchDelegate.h */;
@@ -574,99 +370,6 @@
 		rLoc = 0;
 		rType = 0;
 		vrLen = 467;
-		vrLoc = 0;
-	};
-	B94ECBDE106FE74E0040CC15 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B9EC029C104ECB37004CE843 /* libdxt.cpp */;
-		name = "libdxt.cpp: 117";
-		rLen = 0;
-		rLoc = 3080;
-		rType = 0;
-		vrLen = 464;
-		vrLoc = 2662;
-	};
-	B94ECBE3106FE74E0040CC15 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B9EC02A9104ECB37004CE843 /* util.cpp */;
-		name = "util.cpp: 158";
-		rLen = 5;
-		rLoc = 3657;
-		rType = 0;
-		vrLen = 442;
-		vrLoc = 3376;
-	};
-	B94ECBE4106FE74E0040CC15 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B9EC0296104ECB37004CE843 /* dataset.cpp */;
-		name = "dataset.cpp: 122";
-		rLen = 5;
-		rLoc = 3224;
-		rType = 0;
-		vrLen = 631;
-		vrLoc = 2958;
-	};
-	B94ECBE6106FE74E0040CC15 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B9EC02A0104ECB37004CE843 /* model.cpp */;
-		name = "model.cpp: 117";
-		rLen = 0;
-		rLoc = 3872;
-		rType = 0;
-		vrLen = 577;
-		vrLoc = 3337;
-	};
-	B94ECBE9106FE74E0040CC15 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B9EC02A7104ECB37004CE843 /* trackscene.cpp */;
-		name = "trackscene.cpp: 194";
-		rLen = 5;
-		rLoc = 5589;
-		rType = 0;
-		vrLen = 1070;
-		vrLoc = 4959;
-	};
-	B953EA1C1062F36300788DC6 /* defaultDictionary.plist */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = text.plist.xml;
-		name = defaultDictionary.plist;
-		path = "/Users/julian/dev/EVL/LODRender/Cocoa Corelyzer/resources/annotations/defaultDictionary.plist";
-		sourceTree = "<absolute>";
-	};
-	B953EA3E1062F36300788DC6 /* attachment.gif */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.gif;
-		name = attachment.gif;
-		path = "/Users/julian/dev/EVL/LODRender/Cocoa Corelyzer/resources/icons/attachment.gif";
-		sourceTree = "<absolute>";
-	};
-	B953EA401062F36300788DC6 /* break.gif */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.gif;
-		name = break.gif;
-		path = "/Users/julian/dev/EVL/LODRender/Cocoa Corelyzer/resources/icons/break.gif";
-		sourceTree = "<absolute>";
-	};
-	B953EAA11062F5B600788DC6 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = B953EA1C1062F36300788DC6 /* defaultDictionary.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = "/Users/julian/Desktop/sage-corelyzer/Cocoa Corelyzer/resources/annotations/defaultDictionary.plist";
-		rLen = 0;
-		rLoc = 9223372036854775808;
-	};
-	B953EAA41062F5B600788DC6 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B9EC02A2104ECB37004CE843 /* resampleimage.cpp */;
-		name = "resampleimage.cpp: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 2505;
 		vrLoc = 0;
 	};
 	B9AE812610B5F5E60075CB8A /* PBXTextBookmark */ = {
@@ -718,59 +421,19 @@
 			sepNavWindowFrame = "{{84, 379}, {750, 731}}";
 		};
 	};
-	B9B7370A10C4677A007BB14E /* sail.h */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.h;
-		name = sail.h;
-		path = "/Users/julian/dev/EVL/LODRender/Cocoa Corelyzer/Frameworks/SAGE.framework/Headers/sail.h";
-		sourceTree = "<absolute>";
-	};
-	B9B73A1D10C578D6007BB14E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B9B7370A10C4677A007BB14E /* sail.h */;
-		name = "sail.h: 10";
-		rLen = 0;
-		rLoc = 301;
-		rType = 0;
-		vrLen = 2206;
-		vrLoc = 0;
-	};
-	B9B73A1E10C578D6007BB14E /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = B907CD3510BC5F13005CE4FB /* Corelyzer.conf */;
-	};
-	B9B73A2710C578F3007BB14E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B907CD3510BC5F13005CE4FB /* Corelyzer.conf */;
-		name = "Corelyzer.conf: 19";
-		rLen = 0;
-		rLoc = 265;
-		rType = 0;
-		vrLen = 265;
-		vrLoc = 0;
-	};
-	B9B73A7110C5C7FD007BB14E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B907CD3510BC5F13005CE4FB /* Corelyzer.conf */;
-		name = "Corelyzer.conf: 10";
-		rLen = 0;
-		rLoc = 136;
-		rType = 0;
-		vrLen = 265;
-		vrLoc = 0;
-	};
 	B9D257D6105022F2008DFCF3 /* CorelyzerGLViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {821, 603}}";
-			sepNavSelRange = "{216, 0}";
-			sepNavVisRange = "{0, 788}";
+			sepNavIntBoundsRect = "{{0, 0}, {1219, 572}}";
+			sepNavSelRange = "{324, 0}";
+			sepNavVisRange = "{0, 471}";
+			sepNavWindowFrame = "{{15, 50}, {658, 723}}";
 		};
 	};
 	B9D257D7105022F2008DFCF3 /* CorelyzerGLViewController.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {684, 1924}}";
-			sepNavSelRange = "{558, 0}";
-			sepNavVisRange = "{0, 961}";
+			sepNavIntBoundsRect = "{{0, 0}, {930, 2483}}";
+			sepNavSelRange = "{319, 0}";
+			sepNavVisRange = "{0, 844}";
 			sepNavWindowFrame = "{{217, 111}, {1046, 564}}";
 		};
 	};
@@ -820,139 +483,11 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
-	B9EC0277104ECB37004CE843 /* cache.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = cache.h;
-		path = /Users/julian/dev/EVL/LODRender/include/cache.h;
-		sourceTree = "<absolute>";
-	};
-	B9EC027B104ECB37004CE843 /* corelyzer_system.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = corelyzer_system.h;
-		path = /Users/julian/dev/EVL/LODRender/include/corelyzer_system.h;
-		sourceTree = "<absolute>";
-	};
-	B9EC027C104ECB37004CE843 /* coresection.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = coresection.h;
-		path = /Users/julian/dev/EVL/LODRender/include/coresection.h;
-		sourceTree = "<absolute>";
-	};
-	B9EC027D104ECB37004CE843 /* dataset.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = dataset.h;
-		path = /Users/julian/dev/EVL/LODRender/include/dataset.h;
-		sourceTree = "<absolute>";
-	};
-	B9EC0281104ECB37004CE843 /* freedraw.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = freedraw.h;
-		path = /Users/julian/dev/EVL/LODRender/include/freedraw.h;
-		sourceTree = "<absolute>";
-	};
-	B9EC0289104ECB37004CE843 /* textureresource_ex.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = textureresource_ex.h;
-		path = /Users/julian/dev/EVL/LODRender/include/textureresource_ex.h;
-		sourceTree = "<absolute>";
-	};
-	B9EC0296104ECB37004CE843 /* dataset.cpp */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.cpp.cpp;
-		name = dataset.cpp;
-		path = /Users/julian/dev/EVL/LODRender/src/dataset.cpp;
-		sourceTree = "<absolute>";
-	};
-	B9EC0299104ECB37004CE843 /* freedraw.cpp */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.cpp.cpp;
-		name = freedraw.cpp;
-		path = /Users/julian/dev/EVL/LODRender/src/freedraw.cpp;
-		sourceTree = "<absolute>";
-	};
-	B9EC029B104ECB37004CE843 /* intrinsic.cpp */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.cpp.cpp;
-		name = intrinsic.cpp;
-		path = /Users/julian/dev/EVL/LODRender/src/intrinsic.cpp;
-		sourceTree = "<absolute>";
-	};
-	B9EC029C104ECB37004CE843 /* libdxt.cpp */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.cpp.cpp;
-		name = libdxt.cpp;
-		path = /Users/julian/dev/EVL/LODRender/src/libdxt.cpp;
-		sourceTree = "<absolute>";
-	};
-	B9EC02A0104ECB37004CE843 /* model.cpp */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.cpp.cpp;
-		name = model.cpp;
-		path = /Users/julian/dev/EVL/LODRender/src/model.cpp;
-		sourceTree = "<absolute>";
-	};
-	B9EC02A2104ECB37004CE843 /* resampleimage.cpp */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.cpp.cpp;
-		name = resampleimage.cpp;
-		path = /Users/julian/dev/EVL/LODRender/src/resampleimage.cpp;
-		sourceTree = "<absolute>";
-	};
-	B9EC02A7104ECB37004CE843 /* trackscene.cpp */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.cpp.cpp;
-		name = trackscene.cpp;
-		path = /Users/julian/dev/EVL/LODRender/src/trackscene.cpp;
-		sourceTree = "<absolute>";
-	};
-	B9EC02A8104ECB37004CE843 /* trackscenenode.cpp */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.cpp.cpp;
-		name = trackscenenode.cpp;
-		path = /Users/julian/dev/EVL/LODRender/src/trackscenenode.cpp;
-		sourceTree = "<absolute>";
-	};
-	B9EC02A9104ECB37004CE843 /* util.cpp */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.cpp.cpp;
-		name = util.cpp;
-		path = /Users/julian/dev/EVL/LODRender/src/util.cpp;
-		sourceTree = "<absolute>";
-	};
-	B9EC02AA104ECB37004CE843 /* vvvecmath.cpp */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.cpp.cpp;
-		name = vvvecmath.cpp;
-		path = /Users/julian/dev/EVL/LODRender/src/vvvecmath.cpp;
-		sourceTree = "<absolute>";
-	};
 	B9EC02D2104ECC7F004CE843 /* CorelyzerGLView.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {821, 603}}";
+			sepNavIntBoundsRect = "{{0, 0}, {930, 559}}";
 			sepNavSelRange = "{333, 0}";
-			sepNavVisRange = "{0, 941}";
+			sepNavVisRange = "{0, 638}";
 			sepNavWindowFrame = "{{78, 94}, {684, 684}}";
 		};
 	};
@@ -963,5 +498,151 @@
 			sepNavVisRange = "{2269, 1190}";
 			sepNavWindowFrame = "{{814, 184}, {643, 772}}";
 		};
+	};
+	B9FF952C11457E6200E4B3FA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B907CD3510BC5F13005CE4FB /* Corelyzer.conf */;
+		name = "Corelyzer.conf: 5";
+		rLen = 0;
+		rLoc = 68;
+		rType = 0;
+		vrLen = 265;
+		vrLoc = 0;
+	};
+	B9FF952D11457E6200E4B3FA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D80F4B6AC300CF3369 /* Cocoa_CorelyzerAppDelegate.h */;
+		name = "Cocoa_CorelyzerAppDelegate.h: 10";
+		rLen = 0;
+		rLoc = 182;
+		rType = 0;
+		vrLen = 335;
+		vrLoc = 0;
+	};
+	B9FF952E11457E6200E4B3FA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B9EC02D2104ECC7F004CE843 /* CorelyzerGLView.h */;
+		name = "CorelyzerGLView.h: 17";
+		rLen = 0;
+		rLoc = 333;
+		rType = 0;
+		vrLen = 638;
+		vrLoc = 0;
+	};
+	B9FF953F11457F0000E4B3FA /* CorelyzerGLViewController.mm:58 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = B9D257D7105022F2008DFCF3 /* CorelyzerGLViewController.mm */;
+		functionName = "-loadImageTest:";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 58;
+		location = "Cocoa Corelyzer";
+		modificationTime = 289767188.765264;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	B9FF954711457F6800E4B3FA /* textureresource_ex.cpp:1547 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = B9FF954811457F6800E4B3FA /* textureresource_ex.cpp */;
+		functionName = "create_texset_from_tiff(const char* filename, int nlevels, int blksize)";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 1547;
+		location = LODRender;
+		modificationTime = 289767272.079086;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	B9FF954811457F6800E4B3FA /* textureresource_ex.cpp */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.cpp.cpp;
+		name = textureresource_ex.cpp;
+		path = /Users/julian/dev/GitHub/LODRender/src/textureresource_ex.cpp;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1219, 29900}}";
+			sepNavSelRange = "{45154, 0}";
+			sepNavVisRange = "{44815, 575}";
+		};
+	};
+	B9FF954B11457F7E00E4B3FA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B9FF954C11457F7E00E4B3FA /* scenegraph_c.cpp */;
+		name = "scenegraph_c.cpp: 988";
+		rLen = 0;
+		rLoc = 25288;
+		rType = 0;
+		vrLen = 480;
+		vrLoc = 26031;
+	};
+	B9FF954C11457F7E00E4B3FA /* scenegraph_c.cpp */ = {
+		isa = PBXFileReference;
+		name = scenegraph_c.cpp;
+		path = /Users/julian/dev/GitHub/LODRender/src/scenegraph_c.cpp;
+		sourceTree = "<absolute>";
+	};
+	B9FF954E11457F7E00E4B3FA /* textureresource_ex.cpp */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.cpp.cpp;
+		name = textureresource_ex.cpp;
+		path = /Users/julian/dev/GitHub/LODRender/src/textureresource_ex.cpp;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1219, 29926}}";
+			sepNavSelRange = "{45160, 0}";
+			sepNavVisRange = "{44815, 553}";
+		};
+	};
+	B9FF95651145860200E4B3FA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B9FF954E11457F7E00E4B3FA /* textureresource_ex.cpp */;
+		name = "textureresource_ex.cpp: 1549";
+		rLen = 0;
+		rLoc = 45196;
+		rType = 0;
+		vrLen = 859;
+		vrLoc = 44721;
+	};
+	B9FF9580114587F500E4B3FA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B9D257D6105022F2008DFCF3 /* CorelyzerGLViewController.h */;
+		name = "CorelyzerGLViewController.h: 24";
+		rLen = 0;
+		rLoc = 495;
+		rType = 0;
+		vrLen = 782;
+		vrLoc = 0;
+	};
+	B9FF95881145881A00E4B3FA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B9D257D7105022F2008DFCF3 /* CorelyzerGLViewController.mm */;
+		name = "CorelyzerGLViewController.mm: 14";
+		rLen = 0;
+		rLoc = 294;
+		rType = 0;
+		vrLen = 492;
+		vrLoc = 0;
+	};
+	B9FF95891145881E00E4B3FA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B9D257D7105022F2008DFCF3 /* CorelyzerGLViewController.mm */;
+		name = "CorelyzerGLViewController.mm: 17";
+		rLen = 0;
+		rLoc = 319;
+		rType = 0;
+		vrLen = 844;
+		vrLoc = 0;
 	};
 }

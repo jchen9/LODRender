@@ -11,6 +11,8 @@
 #import "LODRender/scenegraph_c.h"
 
 @interface CorelyzerGLViewController : NSObject {
+	IBOutlet NSWindow *window;
+	
 	IBOutlet CorelyzerGLView *view;
 	IBOutlet NSComboBox   *comboBox;
 
@@ -19,11 +21,16 @@
 	int sceneSectionId;
 }
 
+@property (readonly) NSWindow *window;
+
 - (IBAction)loadImageTest:(id)sender;
 - (IBAction)removeImageTest:(id)sender;
 - (IBAction)turnGridOn:(id)sender;
 - (IBAction)turnCrosshairOn:(id)sender;
 - (IBAction)doSAGECheck:(id)sender;
+
+- (IBAction)openImageAction:(id)sender;
+- (void)loadImageFrom:(NSURL *)aUrl;
 
 - (int *) loadASection:(NSString *) filepath intoTrack:(NSString *) trackName;
 - (void)  removeASection;
